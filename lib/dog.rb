@@ -4,11 +4,11 @@ class Dog
   
   def initialize(name)
     @name = name 
-    save(name)
+    save
   end 
   
-  def save(name)
-    @@all << name
+  def save
+    @@all << self
   end 
   
   def self.all
